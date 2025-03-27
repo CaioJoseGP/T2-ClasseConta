@@ -12,7 +12,7 @@ public class ContaCorrente {
     }
 
     public double sacar(double valor) {
-        if(this.saldo < valor && valor <= 0) {
+        if(this.saldo < valor || valor <= 0) {
             return 0;
 
         } else {
@@ -21,7 +21,7 @@ public class ContaCorrente {
     }
     
     public double transferir(double valor, ContaCorrente contaTransferencia) {
-        if(this.saldo < valor && valor <= 0) {
+        if(this.saldo < valor || valor <= 0) {
             return 0;
 
         } else {
